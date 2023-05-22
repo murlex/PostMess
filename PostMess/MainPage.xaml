@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PostMess.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                x:Name="ErrorLabel"
+                TextColor="Red" />
+
+            <Button
+                Text="Send mess"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnSendClicked"
+                HorizontalOptions="Center" />
+
+            <Editor
+                x:Name="Message"
+                BackgroundColor="AliceBlue"
+                AutoSize="TextChanges"
+                Text=""
+                HeightRequest="500"
+                FontSize="18" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
